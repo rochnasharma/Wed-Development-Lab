@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student Registration form</title>
+</head>
+<body>
+    <h1>student Registration Form</h1>
+    <form>
+        <label>Full Name : </label>
+        <input type="text" name="fullname" placeholder="Enter Your name" required minlength="3">
+        <br><br>
+
+        <label>Email : </label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <label>Mobile number : </label>
+        <input type="tel" name="mobile number" pattern="[0-9]{10}" placeholder="10 digit number" required>
+        <br><br>
+
+        <label>Password : </label>
+        <input type="password" name="password" minlength="8" required>
+        <br><br>
+
+        <label>Date of Birth : </label>
+        <input type="date" name="date of birth" required>
+        <br><br>
+
+        <label>Gender : </label>
+        <input type="radio" name="gender" value="male" required> male.
+        <input type="radio" name="gender" value="female" required> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br><br>
+
+        <label>course : </label>
+        <select name="course" required>
+            <option value="">select course</option>
+            <option value="Btech">B.Tech</option>
+            <option value="BCA">BCA</option>
+            <option value="MCA">MCA</option>
+        </select>
+        <br><br>
+
+        <label>Address : </label>
+        <textarea name="address" placeholder="Enter your address" minlength="10" required></textarea>
+        <br><br>
+
+        <input type="checkbox" name="termsaccepted" required>
+        I accept the terms and conditions.
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
